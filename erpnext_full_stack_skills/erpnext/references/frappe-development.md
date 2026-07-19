@@ -13,6 +13,11 @@ bench --site mysite.local execute my_app.utils.fn   # run one function
 bench --site mysite.local set-config developer_mode 1
 bench build && bench restart                  # rebuild assets / reload workers
 bench --site mysite.local backup --with-files
+
+bench --site  bestlifehearingcare.com backup --with-files
+bench --site  demo.bestlifehearingcare.com backup --with-files
+bench --site  crm-demo.glascutr.com backup --with-files
+bench --site  bizboostpos.glascutr.com backup --with-files
 bench update                                  # pull + migrate + build all apps (careful in prod)
 ```
 
